@@ -2,7 +2,7 @@
 import sys
 from calculator_1 import add, sub, mul, div
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     argv = sys.argv[1:]
     arg_num = len(argv)
     if arg_num != 3:
