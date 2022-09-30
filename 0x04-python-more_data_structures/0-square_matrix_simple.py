@@ -2,4 +2,4 @@
 
 
 def square_matrix_simple(matrix=[]):
-    print(list(map(lambda submat: list(map(lambda y: y**2, submat)), matrix)))
+    return list(map(lambda submat: list(map(lambda y: y**2, submat)), matrix))
