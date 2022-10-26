@@ -1,1 +1,1 @@
-Higher programming level projects done during my Software Engineering studies at ALX
+Project undergone during my software engineering studies at ALX
