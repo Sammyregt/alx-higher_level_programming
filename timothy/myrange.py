@@ -10,7 +10,7 @@ parameter:
 
 '''
 
-def myrange(start = None, stop, step = None):
+def myrange(*, start=None, stop, step = None):
     # seting the start = 0
     # setting step = 1
     if start is None:
