@@ -1,1 +1,1 @@
-Project undergone during my software engineering studies at ALX
+Project on SQL done during my studies at ALX
