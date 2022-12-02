@@ -1,1 +1,1 @@
-Project on SQL done during my studies at ALX
+Project done on Higher level programming during my studies at ALX
