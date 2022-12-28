@@ -21,8 +21,3 @@ if __name__ == "__main__":
     state = session.query(State).filter_by(id=2).first()
     state.name = "New Mexico"
     session.commit()
-Footer
- 2022 GitHub, Inc.
-Footer navigation
-Terms
-Pr
