@@ -48,7 +48,6 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
-
     def area(self):
         """
             Returns the current sqaure area
@@ -63,7 +62,7 @@ class Square:
             print("")
             return
 
-        [print("") for i in range(self.__position[1]) if (self.__position[1] > 0)]
+        [print("") for i in range(self.__position[1])]
         for i in range(self.__size):
             [print(" ", end="") for j in range(self.__position[0])]
             [print("#", end="") for k in range(self.__size)]
