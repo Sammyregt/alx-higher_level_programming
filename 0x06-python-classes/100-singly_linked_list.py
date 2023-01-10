@@ -5,6 +5,9 @@
 
 
 class Node:
+    """
+        Defines a Node
+    """
     def __init__(self, data, next_node=None):
         """
             initialize a new node
