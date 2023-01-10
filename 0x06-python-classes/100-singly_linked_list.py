@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-""" 
+"""
     Define classes for a singly linked list
 """
+
+
 class Node:
     def __init__(self, data, next_node=None):
         """
             initialize a new node
-            
             Args:
             data (int) - The data of the new node
             next_node (node) - The next node of the next node
@@ -32,7 +33,7 @@ class Node:
         if not isinstance(value, int):
             raise TypeError("data must be an integer")
         self.__data = value
-        
+
     @property
     def next_node(self):
         """
@@ -45,9 +46,11 @@ class Node:
         """
             A method to set the next node
         """
-        if ((next_node is not None) and (not isinstance(value, Node)):
-                raise TypeError("next node must be a Node object")
+        if not isinstance(value, Node) and value is not None:
+            raise TypeError("next node must be a Node object")
+
         self.__next_node = value
+
 
 class SinglyLinkedList:
     """
@@ -61,7 +64,6 @@ class SinglyLinkedList:
         self.__head = None
 
     def sorted_insert(self, value):
-        
         """
             Insert a new Node to the SinglyLinkedList.
             The node is inserted into the list at the correct
