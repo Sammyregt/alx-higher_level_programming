@@ -12,8 +12,8 @@ class Node:
         """
             initialize a new node
             Args:
-            data (int) - The data of the new node
-            next_node (node) - The next node of the next node
+                data (int) - The data of the new node
+                next_node (node) - The next node of the next node
         """
         self.data = data
         self.next_node = next_node
@@ -31,7 +31,7 @@ class Node:
             A Method to set the data input
 
             Arg:
-            value (int) - the data
+                value (int) - the data
         """
         if not isinstance(value, int):
             raise TypeError("data must be an integer")
@@ -48,6 +48,9 @@ class Node:
     def next_node(self, value):
         """
             A method to set the next node
+
+            Arg:
+                Value (Node) - th  next node
         """
         if not isinstance(value, Node) and value is not None:
             raise TypeError("next node must be a Node object")
@@ -71,7 +74,8 @@ class SinglyLinkedList:
             Insert a new Node to the SinglyLinkedList.
             The node is inserted into the list at the correct
             ordered numerical position.
-            Args:
+
+            Arg:
                 value (Node): The new Node to insert.
         """
         new = Node(value)
