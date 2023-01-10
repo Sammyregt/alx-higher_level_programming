@@ -5,12 +5,11 @@
 
 
 class Node:
-    """
-        Defines a Node
-    """
+    """Defines a Node"""
+
     def __init__(self, data, next_node=None):
-        """
-            initialize a new node
+        """Initialize a new node
+
             Args:
                 data (int) - The data of the new node
                 next_node (node) - The next node of the next node
@@ -59,9 +58,7 @@ class Node:
 
 
 class SinglyLinkedList:
-    """
-        Defines a singly linked list
-    """
+    """Defines a singly linked list"""
 
     def __init__(self):
         """
