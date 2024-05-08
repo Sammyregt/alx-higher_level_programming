@@ -1,10 +1,24 @@
 #!/usr/bin/python3
-""" Test function find_peak """
-find_peak = __import__('6-peak').find_peak
+"""script for finding peak in list of ints, interview prep
+"""
 
-print(find_peak([1, 2, 4, 6, 3]))
-print(find_peak([4, 2, 1, 2, 3, 1]))
-print(find_peak([2, 2, 2]))
-print(find_peak([]))
-print(find_peak([-2, -4, 2, 1]))
-print(find_peak([4, 2, 1, 2, 2, 2, 3, 1]))
+"""
+    THOUGHT PROCESS
+        it is not sorted, so sorting would take n(log(n))
+            -> not worth sorting
+        looping through and keeping track of max (brute force)
+            -> O(n)
+
+        possibly looping from each end reducing to 1/2 run time
+            -> still O(n)
+"""
+
+
+def find_peak(list_of_integers):
+    """BRUTE force implementation for question
+    """
+    max_i = None
+    for ele in list_of_integers:
+        if max_i is None or max_i < ele:
+            max_i = ele
+    return max_i
